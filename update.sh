@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
 # File location /home/username/.local/bin/update.sh
-# and can be called from the ~/.bash_aliases or ~/.bashrc file with this alias command
-# alias dup="~/.local/bin/update.sh" # dnf updates for ROME
+# and can be called from the ~/.bash_alias or ~/.bashrc file with this alias command
+# alias dsync="~/.local/bin/update.sh" # dnf updates for ROME
 #
 echo # This just adds blank line to separate these headers.
 echo -e "\033[0;31m********Updating all System packages********\033[0m" # Red for root.
