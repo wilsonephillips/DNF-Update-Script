@@ -1,6 +1,7 @@
 #!/usr/bin/bash
-
-# File location /home/username/.local/bin/update.sh
+#
+# instructions
+# file location /home/username/.local/bin/update.sh
 # and can be called from the ~/.bash_alias or ~/.bashrc file with this alias command
 # alias dsync="~/.local/bin/update.sh" # dnf updates for ROME
 #
@@ -17,7 +18,10 @@ echo -e "\033[0;32m********Script Completed!********\033[0m" # Green for complet
 echo
 
 
-# Color References placed here for your convenience
+# Color References
+# these are placed here for your convenience
+# so you don't have to look them up
+#
 # Reset
 # \e[0;0m | NoColor
 #
