@@ -8,7 +8,7 @@
 echo # This just adds blank line to separate these headers.
 echo -e "\033[0;31m********Updating all System packages********\033[0m" # Red for root.
 echo
-sudo dnf clean all ; dnf clean all ; sudo dnf distro-sync --refresh --allowerasing 2>&1| tee dsync2-log.txt ; flatpak update
+sudo dnf clean all ; dnf clean all ; sudo dnf distro-sync --refresh --allowerasing 2>&1| tee dsync2-log.txt
 echo
 echo -e "\033[0;33m********Updating Flatpaks from FlatHub********\033[0m" # Yellow for user
 echo
