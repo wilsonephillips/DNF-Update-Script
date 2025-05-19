@@ -15,7 +15,7 @@ echo -e "\033[0;33m╔═══════════════════�
 echo -e "\033[0;33m║**Updating Flatpaks from FlatHub**║\033[0m" # Yellow for user
 echo -e "\033[0;33m╚══════════════════════════════════╝\033[0m" # Yellow for user
 echo
-flatpak update -y # Notice that the flatpaks are not installed as root. Remove -y if you don't want to assume yes.
+flatpak update -y # Flatpaks are not installed as root. Remove -y if you don't want to assume yes.
 echo
 echo -e "\033[0;32m╔═════════════════════╗\033[0m" # Green for complete
 echo -e "\033[0;32m║**Script Completed!**║\033[0m" # Green for complete
@@ -51,6 +51,13 @@ echo
 # \e[1;34m | Bright Blue
 # \e[1;35m | Bright Purple
 # \e[1;36m | Bright Cyan
-
-# Tip: Make sure your editor is using the same font as your terminal and it should be monospaced
 # \e[1;37m | Bright White
+
+# Tip: Make sure Kate is using the same monospace font as your terminal
+# 
+# Special characters can be found with
+# `sudo dnf install plasma6-kcharselect --refresh'
+# They were under "common"
+#
+# https://forum.openmandriva.org/t/rice-for-the-sake-of-rice-in-an-update-script/7454
+#
