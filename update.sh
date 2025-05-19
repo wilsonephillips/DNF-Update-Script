@@ -15,7 +15,7 @@ echo -e "\033[0;33m╔═══════════════════�
 echo -e "\033[0;33m║**Updating Flatpaks from FlatHub**║\033[0m" # Yellow for user
 echo -e "\033[0;33m╚══════════════════════════════════╝\033[0m" # Yellow for user
 echo
-flatpak update # Notice that the flatpaks are not installed as root.
+flatpak update -y # Notice that the flatpaks are not installed as root. Remove -y if you don't want to assume yes.
 echo
 echo -e "\033[0;32m╔═════════════════════╗\033[0m" # Green for complete
 echo -e "\033[0;32m║**Script Completed!**║\033[0m" # Green for complete
