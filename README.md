@@ -1,8 +1,11 @@
-# DNF-Update-Script
-For OpenMandriva Rock or ROME. Place it in ~/.local/bin and call it with an alias from ~/.bashrc or ~/.bash_alias.
-Update System and Flatpaks together with one command
-Running the script places a log file in ~/
+## DNF-Update-Script
+Just a simple update script with some color codes for OpenMandriva Rock or ROME
 
-Just a simple script with some color codes.
+Path ~/.local/bin/update.sh and make it executable
+
+Call it with an alias from ~/.bashrc or ~/.bash_alias
+alias dsync='~/.local/bin/update.sh'
+
+Running the script creates ~/dsync2.txt
 
 It's rice for the sake of rice.
