@@ -61,3 +61,17 @@ echo
 #
 # https://forum.openmandriva.org/t/rice-for-the-sake-of-rice-in-an-update-script/7454
 #
+# Play with this and see what you can do. The terminal is nothing to fear.
+#
+# echo -e  prints the line to the screen
+#     |      sets the color                 sets the color
+#     |      |      color                    |    color
+#     |      |      |                        |    |
+# echo -e "\033[0;31m╔═════════════════════╗\033[0m" 
+#               |
+#              not bold
+# 0=not bold or regular
+# 1=bold or bright
+#
+# The terminal does not do Bold text. It uses Bold to set the Bright colors
+#
