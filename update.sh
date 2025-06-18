@@ -23,7 +23,7 @@ echo -e "\033[0;32m╚═══════════════════�
 echo
 
 # There are some special characters used to make the boxes.
-# ╔ ╗ ╚ ╝ ═ ║
+# ┌ ┐ └ ┘ ┏ ┓ ┗ ┛ ╔ ╗ ╚ ╝ ─ ━ ═ │ ┃ ║ ├ ┤ ┣ ┫ ╟ ╢ ╠ ╣
 #
 # Color References placed here for your convenience
 # Reset
