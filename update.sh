@@ -3,6 +3,7 @@
 # File location /home/username/.local/bin/update.sh
 # and can be called from the ~/.bash_aliases or ~/.bashrc file with this alias command
 # alias dsync="~/.local/bin/update.sh" # dnf updates for OpenMandriva with log file
+# Make sure it is executable!
 #
 echo # This just adds blank line to separate these headers.
 echo -e "\033[0;31m╔════════════════════════════════╗\033[0m" # Red for root.
