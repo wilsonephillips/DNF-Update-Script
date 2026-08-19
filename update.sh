@@ -1,29 +1,31 @@
 #!/usr/bin/bash
 
-# File location /home/username/.local/bin/update.sh
+# File location /home/username/.local/bin/dsync.sh
 # and can be called from the ~/.bash_aliases or ~/.bashrc file with this alias command
-# alias dsync="~/.local/bin/update.sh" # dnf updates for OpenMandriva with log file
+# alias dsync="~/.local/bin/dsync.sh" # dnf updates for OpenMandriva with log file
 # Make sure it is executable!
 #
 echo # This just adds blank line to separate these headers.
 echo -e "\033[0;31m╔════════════════════════════════╗\033[0m" # Red for root.
-echo -e "\033[0;31m║**Updating all System packages**║\033[0m" # Red for root.
+echo -e "\033[0;31m╟──Updating all System packages──╢\033[0m" # Red for root.
 echo -e "\033[0;31m╚════════════════════════════════╝\033[0m" # Red for root.
 echo
-sudo dnf clean all ; dnf clean all ; sudo dnf distro-sync --refresh --allowerasing 2>&1| tee dsync2-log.txt
+sudo dnf clean all ; dnf clean all ; sudo dnf distro-sync --refresh --allowerasing 2>&1 | tee dsync-log.txt
 echo
-echo -e "\033[0;33m╔══════════════════════════════════╗\033[0m" # Yellow for user
-echo -e "\033[0;33m║**Updating Flatpaks from FlatHub**║\033[0m" # Yellow for user
-echo -e "\033[0;33m╚══════════════════════════════════╝\033[0m" # Yellow for user
+echo -e Log created: ~/dsync-log.txt
+echo
+echo -e "\033[0;34m╔══════════════════════════════════╗\033[0m" # Blue for user
+echo -e "\033[0;34m╟──Updating Flatpaks from FlatHub──╢\033[0m" # Blue for user
+echo -e "\033[0;34m╚══════════════════════════════════╝\033[0m" # Blue for user
 echo
 flatpak update -y # Flatpaks are not installed as root. Remove -y if you don't want to assume yes.
 echo
 echo -e "\033[0;32m╔═════════════════════╗\033[0m" # Green for complete
-echo -e "\033[0;32m║**Script Completed!**║\033[0m" # Green for complete
+echo -e "\033[0;32m╟──Script Completed!──╢\033[0m" # Green for complete
 echo -e "\033[0;32m╚═════════════════════╝\033[0m" # Green for complete
 echo
 
-# There are some special characters used to make the boxes.
+# Here are some special characters used to make the boxes.
 # ┌ ┐ └ ┘ ┏ ┓ ┗ ┛ ╔ ╗ ╚ ╝ ─ ━ ═ │ ┃ ║ ├ ┤ ┣ ┫ ╟ ╢ ╠ ╣
 #
 # Color References placed here for your convenience
