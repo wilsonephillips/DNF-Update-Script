@@ -1,7 +1,7 @@
 ## DNF-Update-Script
 Just a simple update script with some color codes for OpenMandriva Rock or ROME
 
-Path `~/.local/bin/update.sh` and make it executable
+Path `~/.local/bin/dsync.sh` and make it executable
 
 Call it with an alias from `~/.bashrc`
 `alias dsync='~/.local/bin/dsync.sh'`
